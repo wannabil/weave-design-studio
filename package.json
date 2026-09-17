@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "wrangler": "^4.132.0"
+  },
+  "name": "weave-design-studio",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run build && wrangler deploy"
+  }
+}

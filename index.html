@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="An editorial project atlas for Weave Design Studio, shaped around selected architecture and spatial design work." />
+    <title>Weave Design Studio — Project Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      try { document.documentElement.dataset.theme = localStorage.getItem("weave-theme") === "light" ? "light" : "dark"; } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="divisare.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+    <script src="divisare.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to projects</a>
+
+    <header class="atlas-header theme-only-header">
+      <a class="atlas-wordmark" href="#top" aria-label="Weave Design Studio, back to top"><img class="atlas-logo" src="assets/logo-wds.png" alt="" width="24" height="24" />WEAVE<span>DESIGN STUDIO</span></a>
+      <button class="tool-button theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
+    </header>
+
+    <main id="main" class="atlas-frame">
+      <section class="project-index" id="projects" aria-label="Selected Weave projects">
+        <div class="project-rail">
+          <article class="atlas-project">
+            <div class="project-intro">
+              <h1>Every meaningful project begins with understanding.</h1>
+              <p>We help homeowners and businesses clarify what they need before shaping spaces around how people live, work and use them.</p>
+              <div class="project-intro-actions">
+                <button type="button" data-enquiry-open>Start an Initial Design Conversation</button>
+                <a href="#projects" data-view-work>View selected work</a>
+              </div>
+            </div>
+            <a class="project-card-link" href="https://weavedesignstudio.my/projects/6-plus-factory" data-project-open="factory" aria-label="Explore 6+ Factory" aria-haspopup="dialog" aria-controls="project-details-dialog">
+              <div class="project-label"><span>01 / INDUSTRIAL</span><span>JENJAROM, MALAYSIA</span></div>
+              <figure class="project-image">
+                <img src="assets/factory.jpg" alt="6+ Factory concept proposal" fetchpriority="high" />
+              </figure>
+              <div class="project-caption">
+                <div>
+                  <h2>6+ Factory</h2>
+                  <p>Industrial · Concept proposal</p>
+                </div>
+                <span class="project-category">Architecture</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="atlas-project">
+            <a class="project-card-link" href="https://weavedesignstudio.my/projects/travelfrez-experience-point" data-project-open="travelfrez" aria-haspopup="dialog" aria-controls="project-details-dialog">
+              <div class="project-label"><span>02 / BRAND EXPERIENCE</span><span>KLIA2, MALAYSIA</span></div>
+              <figure class="project-image project-image-wide">
+                <img src="assets/travelfrez.jpg" alt="TravelFrez Experience Point at an airport" loading="eager" />
+              </figure>
+              <div class="project-caption">
+                <div>
+                  <h2>TravelFrez Experience Point</h2>
+                  <p>Brand experience · Spatial design</p>
+                </div>
+                <span class="project-category">Spatial design</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="atlas-project">
+            <a class="project-card-link" href="https://weavedesignstudio.my/projects/luma-selakan-dive-lodge" data-project-open="luma" aria-haspopup="dialog" aria-controls="project-details-dialog">
+              <div class="project-label"><span>03 / ISLAND HOSPITALITY</span><span>PULAU SELAKAN, SABAH</span></div>
+              <figure class="project-image">
+                <img src="assets/luma.jpg" alt="Luma’ Selakan Dive Lodge among the tropical landscape" loading="eager" />
+              </figure>
+              <div class="project-caption">
+                <div>
+                  <h2>Luma’ Selakan Dive Lodge</h2>
+                  <p>Island hospitality · Community development</p>
+                </div>
+                <span class="project-category">Hospitality</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-footer">
+      <div class="atlas-footer-inner">
+      <section class="atlas-studio" id="studio" aria-labelledby="studio-title">
+        <div class="index-row"><span>02 / STUDIO</span><span>SPACE BEGINS WITH UNDERSTANDING</span></div>
+        <div class="studio-layout">
+          <h2 id="studio-title">Good design doesn’t begin with drawings. <em>It begins with listening.</em></h2>
+
+        </div>
+      </section>
+
+      <section class="atlas-services" id="services" aria-labelledby="services-title">
+        <div class="index-row"><span>What We Do</span></div>
+        <h2 id="services-title">Design support from the first question to a clear direction.</h2>
+        <p class="section-intro">The right scope depends on the project. We begin by understanding where you are now, then define the work required to move forward responsibly.</p>
+        <div class="service-index">
+          <article><span>01</span><h3>Architecture</h3><p>Concept design and spatial planning for homes, workplaces, hospitality and selected commercial projects.</p></article>
+          <article><span>02</span><h3>Interior Architecture</h3><p>Interior environments shaped around use, atmosphere, material character and the relationship between people and space.</p></article>
+          <article><span>03</span><h3>Early Project Definition</h3><p>Brief development, feasibility thinking and design conversations for clients who need clarity before committing to a full project.</p></article>
+          <article><span>04</span><h3>Submission Coordination</h3><p>Coordination with appointed Registered Architects and relevant registered professionals where statutory submissions or regulated services are required.</p></article>
+        </div>
+      </section>
+
+      <section class="atlas-services" id="project-fit" aria-labelledby="fit-title">
+        <h2 id="fit-title">Projects we are well placed to help with.</h2>
+        <p class="section-intro">We work best with clients who care about how decisions are made—not only how the final space looks.</p>
+        <h3 class="fit-kicker">You may be...</h3>
+        <div class="service-index">
+          <article><span>01</span><h3>Planning a considered home.</h3><p>A new home shaped around daily life, long-term needs, its site and the way you want to live.</p></article>
+          <article><span>02</span><h3>Reworking an existing property.</h3><p>A renovation or adaptive response that respects what is worth keeping while resolving what no longer works.</p></article>
+          <article><span>03</span><h3>Creating a place for your business.</h3><p>A workplace, hospitality or commercial environment that supports operations, people and brand experience.</p></article>
+          <article><span>04</span><h3>Testing an idea before committing.</h3><p>An early-stage conversation to define priorities, constraints, feasibility and the most sensible next step.</p></article>
+        </div>
+      </section>
+
+      <section class="atlas-process" id="process" aria-labelledby="process-title">
+        <div class="index-row"><span>04 / PROCESS</span><span>CLARITY AT EVERY STAGE</span></div>
+        <h2 id="process-title">A clear process, without forcing the answer.</h2>
+        <p class="section-intro">Each commission is different, but the thinking follows a disciplined sequence. This keeps decisions visible and gives the design a reason to exist.</p>
+        <ol>
+          <li><span>01</span><h3>Discover</h3><p>We listen, visit or study the site where appropriate, and understand the people, ambitions, constraints, budget and programme behind the project.</p></li>
+          <li><span>02</span><h3>Define</h3><p>We organise the brief, identify priorities and agree on the scope and key questions the design must answer.</p></li>
+          <li><span>03</span><h3>Develop</h3><p>Ideas are tested through drawings, spatial studies, material thinking and ongoing conversations—not presented as a single unexplained solution.</p></li>
+          <li><span>04</span><h3>Coordinate</h3><p>We help align the design with the relevant consultants, appointed professionals and next-stage requirements appropriate to the project.</p></li>
+        </ol>
+      </section>
+
+      <section class="atlas-contact" id="contact" aria-label="Contact Weave Design Studio">
+        <div class="index-row"><span>05 / CONTACT</span><span>KUALA LUMPUR, MALAYSIA</span></div>
+        <p class="footer-prompt">Have a project in mind?</p>
+        <button class="footer-email" type="button" data-enquiry-open>Start a project enquiry</button>
+        <a class="footer-direct-email" href="mailto:hello@weavedesignstudio.my">hello@weavedesignstudio.my</a>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Weave Design Studio</span>
+          <span class="footer-studio-description"><strong>Weave Design Studio</strong><br />An independent Malaysia-based studio for considered architecture, interior architecture and early project definition.<br />Where a project requires services by a Registered Architect, WDS works in collaboration with an appointed Registered Architect or registered architectural practice.</span>
+          <a href="#top">Back to top</a>
+        </div>
+      </section>
+      </div>
+    </footer>
+
+    <dialog class="enquiry-dialog" id="enquiry-dialog" aria-labelledby="enquiry-title" aria-describedby="enquiry-intro">
+      <button class="enquiry-close" type="button" aria-label="Close project enquiry">×</button>
+      <div class="enquiry-heading">
+        <p class="enquiry-kicker">WEAVE DESIGN STUDIO / PROJECT ENQUIRY</p>
+        <h2 id="enquiry-title">Tell us what you are <em>considering.</em></h2>
+        <p id="enquiry-intro">You do not need a complete brief. Share what you know now and we will review whether WDS is the right fit—and what a sensible first step could be.</p>
+      </div>
+      <form id="enquiry-form">
+        <div class="enquiry-fields">
+          <label>Your name<input name="name" autocomplete="name" required /></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Project type
+            <select name="projectType" required>
+              <option value="">Select one</option>
+              <option>New home</option>
+              <option>Residential renovation</option>
+              <option>Workplace</option>
+              <option>Hospitality</option>
+              <option>Commercial / brand space</option>
+              <option>Early project definition</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Project location<input name="location" placeholder="City, state or country" autocomplete="address-level2" /></label>
+          <label>Indicative project budget
+            <select name="budget">
+              <option value="">Select one</option>
+              <option>Below RM250,000</option>
+              <option>RM250,000 – RM500,000</option>
+              <option>RM500,000 – RM1,000,000</option>
+              <option>Above RM1,000,000</option>
+              <option>To be discussed</option>
+            </select>
+          </label>
+          <label>Desired timeline
+            <select name="timeline">
+              <option value="">Select one</option>
+              <option>Within 3 months</option>
+              <option>3 – 6 months</option>
+              <option>6 – 12 months</option>
+              <option>More than 12 months</option>
+              <option>Still exploring</option>
+            </select>
+          </label>
+          <label class="enquiry-field-wide">What are you hoping to achieve?
+            <textarea name="goals" rows="4" placeholder="A little about your space, your ideas and what matters to you…"></textarea>
+          </label>
+        </div>
+        <button class="enquiry-submit" type="submit">Prepare enquiry email</button>
+        <p class="enquiry-note">Your answers open as an email draft. Nothing is submitted automatically.</p>
+      </form>
+    </dialog>
+
+    <dialog class="project-dialog" id="project-details-dialog" aria-labelledby="project-dialog-title">
+      <button class="project-dialog-close" type="button" aria-label="Close project details">×</button>
+      <div class="project-dialog-panel">
+        <figure class="project-dialog-visual">
+          <img id="project-dialog-image" src="" alt="" />
+        </figure>
+        <div class="project-dialog-copy">
+          <p class="project-dialog-kicker" id="project-dialog-category"></p>
+          <h2 id="project-dialog-title"></h2>
+          <dl class="project-dialog-meta" id="project-dialog-meta"></dl>
+          <div class="project-dialog-story" id="project-dialog-story"></div>
+          <a class="project-dialog-source" id="project-dialog-source" href="#" target="_blank" rel="noopener noreferrer">Read the full project</a>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
